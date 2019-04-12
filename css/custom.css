@@ -1,0 +1,102 @@
+:root {
+    --main-green: #00CB54;
+    --hover-green: #00983F;
+    --color-body-text: #606065;
+    --title-color: #202428;
+    --bg-black: #1E2022;
+    --white: #FFF;
+    --color-gray: rgba(255,255,255, .5);
+}
+body {
+    font-family: 'Work Sans', sans-serif;
+    color: var(--color-body-text);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Maven Pro', sans-serif;
+    color: var(--title-color);
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.btn-outline-success {
+    color: var(--main-green);
+    border-color: var(--main-green);
+}
+.color-green {
+    color: var(--main-green);
+}
+/*MAIN TOP*/
+.top-info {
+    background-color: var(--bg-black);
+    color: var(--color-gray);
+    border-bottom:2px solid var(--color-gray);
+}
+.top-info li {
+    margin: 0 10px;
+}
+.top-info__social i {
+    font-size: 1.5rem;
+    color: var(--color-gray);
+
+}
+.top-info__login a {
+    color: var(--color-gray);
+}
+
+@media (max-width: 768px){
+    .top-info {
+        display: flex;
+        flex-direction: column;
+    }
+    .top-info ul {
+        margin-bottom: 20px;
+    }
+}
+
+/*NAVBAR*/
+.navbar {
+    background-color: var(--bg-black);
+}
+.navbar .nav-link {
+    color: var(--white);
+}
+
+/*HERO*/
+.hero{
+
+    background:linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url('../img/hero.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.hero__box_text {
+    padding: 150px 0;
+}
+.hero__box_text h1 {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: var(--main-green);
+}
+.hero__box_text h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: var(--white);
+}
+.hero__box_text a {
+    text-transform: uppercase;
+}
+
+/*BENEFITS*/
+.benefits h1 {
+    border-left: 4px solid var(--main-green);
+    text-transform: uppercase;
+    padding-left:8px;
+}
+
+.benefits_item img {
+    width: 42px;
+    height: 42px;
+}
