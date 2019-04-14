@@ -6,6 +6,7 @@
     --bg-black: #1E2022;
     --white: #FFF;
     --color-gray: rgba(255,255,255, .5);
+    --bg-gray: #F3F6FB;
 }
 body {
     font-family: 'Work Sans', sans-serif;
@@ -16,6 +17,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Maven Pro', sans-serif;
     color: var(--title-color);
 }
+h2 {font-size: 1.375rem;}
 ul {
     list-style: none;
     margin: 0;
@@ -27,6 +29,19 @@ ul {
 }
 .color-green {
     color: var(--main-green);
+}
+.section-padding {
+    padding: 70px 0;
+}
+.title-section {
+    margin-bottom: 40px;
+    padding-left:8px;
+    border-left: 4px solid var(--main-green);
+    text-transform: uppercase;
+    font-size: 1.875rem;
+}
+.bg-gray {
+    background-color: var(--bg-gray);
 }
 /*MAIN TOP*/
 .top-info {
@@ -58,10 +73,13 @@ ul {
 
 /*NAVBAR*/
 .navbar {
-    background-color: var(--bg-black);
+    background-color: var(--bg-black)!important;
+}
+.navbar-light .navbar-toggler {
+    background-color: var(--main-green);
 }
 .navbar .nav-link {
-    color: var(--white);
+    color: var(--white)!important;
 }
 
 /*HERO*/
@@ -79,24 +97,68 @@ ul {
     font-size: 1.2rem;
     text-transform: uppercase;
     color: var(--main-green);
+    text-align: center;
 }
 .hero__box_text h2 {
     font-size: 2rem;
     text-transform: uppercase;
     color: var(--white);
+    text-align: center;
 }
 .hero__box_text a {
     text-transform: uppercase;
 }
 
 /*BENEFITS*/
-.benefits h1 {
-    border-left: 4px solid var(--main-green);
-    text-transform: uppercase;
-    padding-left:8px;
+.benefits_item {
+    text-align: center;
 }
-
 .benefits_item img {
     width: 42px;
     height: 42px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px){
+    .benefits_item {
+        margin-bottom: 20px;
+    }
+}
+
+/*VIDEOS*/
+.plyr__control--overlaid, .plyr--video .plyr__control.plyr__tab-focus, .plyr--video .plyr__control:hover, .plyr--video .plyr__control[aria-expanded=true] {
+    background-color: rgba(0, 203, 84, .8);
+}
+.plyr--full-ui input[type=range] {
+    color: rgba(0, 203, 84, .8);
+}
+
+/*PLANS*/
+.plans_item {
+    background-color: var(--bg-gray);
+    text-align: center;
+}
+.plans_item p{
+    background-color: var(--main-green);
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    padding: 10px;
+}
+.plans_item span {
+    display: block;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 1.875rem;
+    font-weight: 700;
+}
+.plans_item a {
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px){
+    .plans_item {
+        margin-bottom: 20px;
+    }
 }

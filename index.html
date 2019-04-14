@@ -8,12 +8,13 @@
     <link href="https://fonts.googleapis.com/css?family=Maven+Pro:700,900|Work+Sans:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/plyr.css">
     <link rel="stylesheet" href="css/custom.css">
 </head>
 <body>
     <div class="top-info py-3">
         <div class="container">
-            <div class="row justify-content-between flex-wrap flex-sm-column flex-md-row align-items-sm-center">
+            <div class="row justify-content-between flex-wrap flex-column align-items-center flex-md-row align-items-sm-center">
                 <ul class="top-info__contato d-flex">
                     <li><i class="fas fa-envelope"></i> contato@quimicadoenem.com.br</li>
                     <!-- <li><i class="fas fa-phone"></i> (83) 98888-8888</li> -->
@@ -29,12 +30,12 @@
             </div>
         </div>
     </div>
-    <nav class="navbar navbar-expand-lg py-3">
+    <nav class="navbar navbar-expand-lg py-3 navbar-light bg-light">
         <div class="container">
             <a class="navbar-brand" href="#"><img src="img/quimica-do-enem-white.png" alt="Química do ENEM"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
         
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
@@ -81,22 +82,22 @@
         </div>
     </section>
 
-    <section class="benefits py-4">
+    <section class="benefits section-padding">
         
         <div class="container">
-                <h1 class="my-4">Tudo isso no<br><span class="color-green">Química do ENEM</span></h1>
-            <div class="row justify-content-">
-                <div class="col-md-4 d-flex align-items-center flex-column benefits_item">
+            <h1 class="title-section">Tudo isso no<br><span class="color-green">Química do ENEM</span></h1>
+            <div class="row justify-content-between">
+                <div class="col-md-4  benefits_item">
                     <img src="img/icons/plano-de-estudo.svg" alt="Plano de estudo">
                     <h2>Plano de Estudos</h2>
                     <p>O seu guia para auxilar nos seus estudos e te mostrar o caminho certo</p>
                 </div>
-                <div class="col-md-4 d-flex align-items-center flex-column benefits_item">
+                <div class="col-md-4 benefits_item">
                     <img src="img/icons/exercicios.svg" alt="Exercícios">
                     <h2>Exercícios</h2>
                     <p>A prática leva à perfeição. Além do Plano de Estudo, você também terá várias exercícios para reforçar oque você aprendeu.</p>
                 </div>
-                <div class="col-md-4 d-flex align-items-center flex-column benefits_item">
+                <div class="col-md-4 benefits_item">
                     <img src="img/icons/video-aulas.svg" alt="Vídeo Aulas">
                     <h2>Vídeo Aulas</h2>
                     <p>O conteúdo é em vídeo HD</p>
@@ -104,9 +105,64 @@
             </div>
         </div>
     </section>
+    
+    <section class="bg-gray section-padding">
+        <div class="container">
+            <h1 class="title-section">Assista uma aula demostrativa<br><span class="color-green">do Prof. Marco Viana</span></h1>
+            <div class="row">
+                <div class="col-6 m-auto">
+                    <div class="plyr__video-embed player" >
+                        <iframe
+                            src="https://www.youtube.com/embed/EklqmBmR_EY"
+                            allowfullscreen
+                            allowtransparency
+                            
+                        ></iframe>
+                    </div>
+                </div>   
+            </div>
+        </div>
+    </section>
+
+    <section class="plans section-padding">
+        <div class="container">
+            <h1 class="title-section">Assine já um dos<br><span class="color-green">nossos planos</span></h1>
+            <div class="row">    
+                <div class="col-12 col-md-3">
+                    <div class="plans_item">
+                        <p>1 mês</p>
+                        <span>R$ 19,90</span>
+                        <a class="btn btn-outline-success" href="assinar.html" title="Assinar agora">Assinar agora</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3">
+                    <div class="plans_item">
+                        <p>3 mês</p>
+                        <span>R$ 16,90</span>
+                        <a class="btn btn-outline-success" href="assinar.html" title="Assinar agora">Assinar agora</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3">
+                    <div class="plans_item">
+                        <p>6 mês</p>
+                        <span>R$ 14,90</span>
+                        <a class="btn btn-outline-success" href="assinar.html" title="Assinar agora">Assinar agora</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3">
+                    <div class="plans_item">
+                        <p>10 mês</p>
+                        <span>R$ 9,90</span>
+                        <a class="btn btn-outline-success" href="assinar.html" title="Assinar agora">Assinar agora</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script src="js/plyr.min.js"></script>
     <script src="js/scripts.js"></script>
 </body>
 </html>
