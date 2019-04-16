@@ -7,6 +7,7 @@
     --white: #FFF;
     --color-gray: rgba(255,255,255, .5);
     --bg-gray: #F3F6FB;
+    --bg-dark-black: #191919;
 }
 body {
     font-family: 'Work Sans', sans-serif;
@@ -39,6 +40,14 @@ ul {
     border-left: 4px solid var(--main-green);
     text-transform: uppercase;
     font-size: 1.875rem;
+}
+.title-green-bottom:after {
+    content: '';
+    display: block;
+    margin: 10px 0 0;
+    width: 60px;
+    height: 3px;
+    background-color: var(--main-green);
 }
 .bg-gray {
     background-color: var(--bg-gray);
@@ -161,4 +170,89 @@ ul {
     .plans_item {
         margin-bottom: 20px;
     }
+}
+
+/* HOW ITS WORK */
+.how_its_work {
+    padding: 150px 0;
+    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(../img/bg-how-it-works.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+.how_its_work h1 {
+    color: var(--white);
+}
+
+/*TESTIMONIAL*/
+.testimonial .owl-item img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin: 0 auto 20px;
+}
+.testimonial .owl-item p {
+    max-width: 300px;
+    margin: 0 auto;
+}
+.testimonial .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: var(--main-green);
+} 
+
+/* NEWSLETTER */
+.newsletter {
+    padding: 50px 0;
+    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.5)), url(../img/newsletter.jpg);
+}
+
+.newsletter h1, .newsletter p {
+    color: var(--white);
+}
+
+.newsletter input {
+    border-radius: 0;
+}
+.newsletter input[type=email]{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.newsletter input[type=submit]{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+/*MAIN FOOTER*/
+.main_footer {
+    background-color: var(--bg-black);
+    color: var(--white);
+}
+.main_footer h2 {
+    color: var(--white);
+}
+.main_footer__social img, .main_footer__contact img {
+    width: 30px;
+    height: 30px;
+    padding: 4px 7px 4px 7px;
+    margin-right: 10px;
+    background-color: var(--bg-gray);
+    border-radius: 50%;
+    text-align: center;
+}
+.main_footer__social i {
+    color: var(--main-green);
+}
+
+.main_footer__contact a{
+    color: var(--white);
+    font-size: .8rem;
+}
+
+/*COPY*/
+.copyright {
+    padding: 20px 0;
+    font-size: .8rem;
+    background-color: var(--bg-dark-black);
+}
+.copyright p {
+    margin: 0;
 }
