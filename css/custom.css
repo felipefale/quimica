@@ -8,6 +8,7 @@
     --color-gray: rgba(255,255,255, .5);
     --bg-gray: #F3F6FB;
     --bg-dark-black: #191919;
+    --bg-light-2: #f1f3f7;
 }
 body {
     font-family: 'Work Sans', sans-serif;
@@ -49,8 +50,33 @@ ul {
     height: 3px;
     background-color: var(--main-green);
 }
+.title-green-bottom-center:after {
+    content: '';
+    display: block;
+    margin: 10px auto 0;
+    width: 60px;
+    height: 3px;
+    background-color: var(--main-green);
+}
 .bg-gray {
     background-color: var(--bg-gray);
+}
+.bg-green {
+    background-color: var(--main-green);
+}
+.section-intro {
+    padding: 100px;
+    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url('bg/bg-intro.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.section-intro h1, .section-intro p {
+    color: #FFF;
+}
+
+.intro-black {
+    padding: 100px 0;
+    background-color: var(--bg-black);
 }
 /*MAIN TOP*/
 .top-info {
@@ -255,4 +281,70 @@ ul {
 }
 .copyright p {
     margin: 0;
+}
+
+/*PLANS INTERN*/
+.plans_intern .plans_item{
+    margin-bottom: 20px;
+}
+
+/*CONTACT INTERN*/
+
+.contact_item {
+    text-align: center;
+}
+
+.contact_icon {
+    width: 42px;
+    height: 42px;
+    margin: 0 auto 10px;
+}
+
+.send_msg {
+    background-color: var(--bg-light-2);
+}
+
+/*CURSINHOS*/
+.courses__item {
+    margin-bottom: 20px;
+    background-color: var(--white);
+}
+.courses__item a {
+    text-decoration: none;
+    color: var(--color-body-text);
+}
+.courses__item img {
+    width: 240px;
+    height: 240px;
+    object-fit: cover;
+}
+.courses__item_info {
+    padding:0 10px 10px;
+}
+.courses__item_info h3 {
+    font-size: 1.125rem;
+}
+
+/*MODULES*/
+.modules p{
+    margin-bottom: 0;
+}
+
+/*MODULES CLASS*/
+.modules-class__list li{
+    padding-bottom: 10px;
+    border-left: 2px solid var(--main-green);
+}
+.modules-class__list a {
+    color: var(--color-body-text);
+}
+.modules-class__number {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+    left: -15px;
+    padding: 10px;
+    border-radius: 50%;
+    color: var(--white);
+    background-color: var(--main-green);
 }
