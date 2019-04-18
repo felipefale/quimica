@@ -25,6 +25,9 @@ ul {
     margin: 0;
     padding: 0;
 }
+table p {
+    margin: 0;
+}
 .btn-outline-success {
     color: var(--main-green);
     border-color: var(--main-green);
@@ -63,6 +66,9 @@ ul {
 }
 .bg-green {
     background-color: var(--main-green);
+}
+.p-relative {
+    position: relative;
 }
 .section-intro {
     padding: 100px;
@@ -273,6 +279,12 @@ ul {
     font-size: .8rem;
 }
 
+@media(max-width: 768px){
+    .main_footer__social, .main_footer__contact {
+        margin-bottom: 20px;
+    }
+}
+
 /*COPY*/
 .copyright {
     padding: 20px 0;
@@ -331,6 +343,9 @@ ul {
 }
 
 /*MODULES CLASS*/
+.modules-class__list.nav-tabs {
+    border: none;
+}
 .modules-class__list li{
     padding-bottom: 10px;
     border-left: 2px solid var(--main-green);
@@ -338,13 +353,51 @@ ul {
 .modules-class__list a {
     color: var(--color-body-text);
 }
-.modules-class__number {
-    position: relative;
+.modules-class__list li:before {
+    content: '';
     display: inline-block;
-    margin-bottom: 20px;
-    left: -15px;
+    position: relative;
+    left: -12px;
     padding: 10px;
     border-radius: 50%;
     color: var(--white);
     background-color: var(--main-green);
+}
+
+/*CHANGE COURSE*/
+.active-course {
+    position: absolute;
+    top: 0;
+    padding: 10px;
+    background: var(--main-green);
+    color: var(--white);
+    font-size: .8rem;
+}
+
+/*MENU LOGGED*/
+.top-info__logged li{
+   position: relative;
+}
+.top-info__logged_sub {
+    display: none;
+    position: absolute;
+    margin-top: 10px;
+    background-color: #007bff;
+    padding: 10px;    
+    z-index: 999;
+}
+.top-info__logged_sub a {
+    display: inline-block;
+    padding: 10px 0;
+    color: var(--white);
+    border-bottom: 1px solid var(--white);
+}
+/* .top-info__logged_sub a:nth-last-child(){
+    border-bottom: none;
+} */
+/* .top-info__logged_drop:hover .top-info__logged_sub, .top-info__logged_sub:hover{
+    display: block;
+} */
+.active {
+    display: block
 }

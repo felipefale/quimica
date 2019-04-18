@@ -63,9 +63,9 @@
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="modulos.html">Módulos</a>
                             <a class="dropdown-item" href="aulas.html">Aulas</a>
-                            <a class="dropdown-item" href="">Exercícios</a>
+                            <a class="dropdown-item" href="exercicios.html">Exercícios</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Provas</a>
+                            <a class="dropdown-item" href="provas.html">Provas</a>
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="planos-de-estudo.html">Planos de Estudo</a>
                         </div>
@@ -74,28 +74,46 @@
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
                     <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+                    <button class="btn btn-outline-success my-2 mr-sm-2 my-sm-0" type="submit">Buscar</button>
                 </form>
+
+                <ul class="top-info__logged d-flex p-relative">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            João
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="meu-perfil.html">Meu perfil</a>
+                            <a class="dropdown-item" href="trocar-de-curso.html">Trocar de curso</a>
+                            <a class="dropdown-item" href="enviar-depoimento.html">Envie seu depoimento</a>
+                            <a class="dropdown-item" href="#">Sair</a>
+                        </div>
+                    </div>
+                </ul>
             </div>
         </div>
     </nav>
-
     <section class="section-padding modules-class">
         <div class="container">
             <h1>Matéria e Energia</h1>
             <p class="mb-5">Cursinhos >> EXTENSIVO 2019 >> Princípios Elementares da Matéria >> Matéria e Energia</p>
             <div class="row">
                 <div class="col-md-4">
-                    <ul class="modules-class__list">
-                        <li><span class="modules-class__number">1</span> <a href="#"> Matéria e Energia</a></li>
-                        <li><span class="modules-class__number">2</span> <a href="#">Elemento Químico, substâncias, misturas e alotropia</a></li>
+                    <ul class="modules-class__list nav nav-tabs">
+                        <li> <a data-toggle="tab" href="#class-1"> Matéria e Energia</a></li>
+                        <li> <a data-toggle="tab" href="#class-2">Elemento Químico, substâncias, misturas e alotropia</a></li>
                     </ul>
                 </div>
-                <div class="col-md-8">
-                        <iframe width="100%" height="450" src="https://www.youtube.com/embed/EklqmBmR_EY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="col-md-8 tab-content">
+                    <div class="tab-pane active" id="class-1">
+                        <iframe width="100%" height="450" src="https://www.youtube.com/embed/EklqmBmR_EY"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
 
                         <h2 class="mt-4">Matéria e Energia</h2>
-                        <p>Nesta aula iremos aprender os conceitos básicos sobre matéria, energia e suas propriedades. </p>
+                        <p>Nesta aula iremos aprender os conceitos básicos sobre matéria, energia e suas propriedades.
+                        </p>
                         <h2 class="mb-3">Lista de Exercícios</h2>
                         <table class="table table-dark">
                             <thead>
@@ -107,7 +125,8 @@
                             <tbody>
                                 <tr>
                                     <td>
-                                        <p><span class="color-green">03/03/2019</span> <a href="#">Exercícios - Princípios Elementares da Matéria</a></p>
+                                        <p><span class="color-green">03/03/2019</span> <a href="#">Exercícios -
+                                                Princípios Elementares da Matéria</a></p>
                                     </td>
                                     <td>
                                         <a href=""><i class="fas fa-download"></i></a>
@@ -115,6 +134,36 @@
                                 </tr>
                             </tbody>
                         </table>
+                    </div>
+
+                    <div class="tab-pane" id="class-2">
+                        <iframe width="100%" height="450" src="https://www.youtube.com/embed/KoJwi7wvx7s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                        <h2 class="mt-4">Elemento Químico, substâncias, misturas e alotropia</h2>
+                        <p>Nesta aula iremos aprender os conceitos básicos sobre matéria, energia e suas propriedades.
+                        </p>
+                        <h2 class="mb-3">Lista de Exercícios</h2>
+                        <table class="table table-dark">
+                            <thead>
+                                <tr>
+                                    <th class="text-center" scope="col">Extensivo 2019</th>
+                                    <th scope="col">Ações</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <p><span class="color-green">03/03/2019</span> <a href="#">Exercícios -
+                                                Princípios Elementares da Matéria</a></p>
+                                    </td>
+                                    <td>
+                                        <a href=""><i class="fas fa-download"></i></a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
                 </div>
             </div>
         </div>

@@ -10,4 +10,13 @@ $(document).ready(function(){
         items: 1
     });
 
-  });
+    let subMenu = document.querySelector('.js-sub-menu');
+    let subMenuDrop = document.querySelector('.top-info__logged_sub');
+    subMenu.addEventListener('click', function(e){
+        e.preventDefault();
+        subMenuDrop.classList.toggle('active');
+    })
+
+
+});
+
