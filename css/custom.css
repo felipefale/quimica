@@ -373,7 +373,11 @@ table p {
     color: var(--white);
     font-size: .8rem;
 }
-
+@media (max-width: 768px){
+    .courses__item {
+        text-align: center;
+    }
+}
 /*MENU LOGGED*/
 .top-info__logged li{
    position: relative;
